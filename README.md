@@ -7,3 +7,49 @@ npm install --save-dev @gravity-ui/illustrations
 ```
 
 ## Usage
+
+### React
+
+#### Preparation
+
+Define `--gil-color-secondary-theme` css-token in your app:
+
+```scss
+--gil-color-secondary-theme: rgba(240, 243, 245, 1);
+```
+
+or use mixins in scss:
+
+```scss
+@import '@gravity-ui/illustrations/styles/theme.scss';
+
+.g-root {
+  &_theme_light {
+    @include g-illustrations-colors-light;
+  }
+
+  &_theme_dark {
+    @include g-illustrations-colors-dark;
+  }
+}
+```
+
+#### Usage
+
+```js
+import NotFound from '@gravity-ui/illustrations/dist/NotFound';
+```
+
+or
+
+```js
+import {NotFound} from '@gravity-ui/illustrations';
+```
+
+### SVG
+
+> You might need an appropriate loader for this
+
+```js
+import cloudIcon from '@gravity-ui/icons/svgs/cloud.svg';
+```
