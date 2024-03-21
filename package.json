@@ -30,6 +30,7 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
+    "@bem-react/classname": "^1.6.0",
     "@commitlint/cli": "^19.0.3",
     "@commitlint/config-conventional": "^19.0.3",
     "@gravity-ui/eslint-config": "^3.1.1",
@@ -37,11 +38,13 @@
     "@gravity-ui/stylelint-config": "^4.0.1",
     "@gravity-ui/tsconfig": "^1.0.0",
     "@gravity-ui/uikit": "^6.2.0",
-    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/addon-essentials": "^8.0.2",
     "@storybook/addon-webpack5-compiler-babel": "^3.0.3",
+    "@storybook/manager-api": "^8.0.2",
     "@storybook/preset-scss": "^1.0.3",
-    "@storybook/react": "^8.0.0",
-    "@storybook/react-webpack5": "^8.0.0",
+    "@storybook/react": "^8.0.2",
+    "@storybook/react-webpack5": "^8.0.2",
+    "@storybook/theming": "^8.0.2",
     "@svgr/webpack": "^8.1.0",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
@@ -54,7 +57,7 @@
     "react-dom": "^18.2.0",
     "sass": "^1.71.1",
     "sass-loader": "^14.1.1",
-    "storybook": "^8.0.0",
+    "storybook": "^8.0.2",
     "style-loader": "^3.3.4",
     "stylelint": "^15.11.0",
     "typescript": "^5.4.2"
