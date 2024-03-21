@@ -1,8 +1,10 @@
-import React from 'react';
+import * as React from 'react';
+
+import {Flex, Icon, spacing} from '@gravity-ui/uikit';
 import {Meta, StoryFn} from '@storybook/react';
-import {Flex, Icon as IconWrapper, spacing} from '@gravity-ui/uikit';
-import {IconTooltip} from './IconTooltip/IconTooltip';
-import {buildIconImportLine, buildIconSvgPath} from './utils';
+
+import {ImportsTooltip} from './ImportsTooltip/ImportsTooltip';
+import {IllustrationMeta} from './types';
 
 import metadata from '../../metadata.json';
 
@@ -16,43 +18,21 @@ const meta = {
 
 export default meta;
 
-interface ItemMeta {
-    svgName: string;
-    theme: 'light' | 'dark';
-    componentName: string;
-}
-
-const libContext = require.context('../../svgs', false, /\.svg$/);
-const iconsMetadataByName = (metadata.icons as ItemMeta[]).reduce(
-    (acc, icon) => ({...acc, [icon.svgName]: icon}),
-    {} as Record<string, ItemMeta>,
-);
-
 interface Item {
-    meta: ItemMeta;
-    Icon: any;
+    meta: IllustrationMeta;
+    Component: any;
 }
 
-const items = libContext
-    .keys()
-    .map((path) => {
-        const module = libContext(path) as any;
-        const name = path.match(/((\w|-)+-(light|dark))\.svg$/)?.[1] ?? '';
-        const meta = iconsMetadataByName[name];
-        const Icon = module.default || module;
+const items = (metadata.illustrations as IllustrationMeta[]).map((meta) => {
+    const ComponentLight = require(`../../svgs/${meta.svgName}-light.svg`).default;
+    const ComponentDark = require(`../../svgs/${meta.svgName}-dark.svg`).default;
 
-        return {
-            meta,
-            Icon,
-        };
-    })
-    .reduce(
-        (acc, item) => {
-            acc[item.meta.theme].push(item);
-            return acc;
-        },
-        {light: Array<Item>(), dark: Array<Item>()},
-    );
+    return {
+        meta,
+        ComponentLight,
+        ComponentDark,
+    };
+});
 
 const svgsRenderer =
     (renderItems: Item[]): StoryFn =>
@@ -60,25 +40,11 @@ const svgsRenderer =
         return (
             <div className={spacing({p: 4})}>
                 <Flex gap={8} wrap>
-                    {renderItems.map(({meta: itemMeta, Icon}) => {
+                    {renderItems.map(({meta: itemMeta, Component}) => {
                         return (
-                            <IconTooltip
-                                key={itemMeta.svgName}
-                                componentName={itemMeta.componentName}
-                                importSvgLight={buildIconSvgPath(
-                                    itemMeta.svgName,
-                                    itemMeta.componentName,
-                                    'light',
-                                )}
-                                importSvgDark={buildIconSvgPath(
-                                    itemMeta.svgName,
-                                    itemMeta.componentName,
-                                    'dark',
-                                )}
-                                importComponent={buildIconImportLine(itemMeta.componentName)}
-                            >
-                                {<IconWrapper data={Icon} size={size} />}
-                            </IconTooltip>
+                            <ImportsTooltip key={itemMeta.svgName} meta={itemMeta}>
+                                <Icon data={Component} size={size} />
+                            </ImportsTooltip>
                         );
                     })}
                 </Flex>
@@ -86,5 +52,9 @@ const svgsRenderer =
         );
     };
 
-export const Light = svgsRenderer(items.light);
-export const Dark = svgsRenderer(items.dark);
+export const Light = svgsRenderer(
+    items.map(({meta, ComponentLight}) => ({meta, Component: ComponentLight})),
+);
+export const Dark = svgsRenderer(
+    items.map(({meta, ComponentDark}) => ({meta, Component: ComponentDark})),
+);

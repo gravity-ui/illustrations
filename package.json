@@ -7,8 +7,7 @@
   "files": [
     "dist",
     "svgs",
-    "styles",
-    "metadata.json"
+    "styles"
   ],
   "repository": {
     "type": "git",

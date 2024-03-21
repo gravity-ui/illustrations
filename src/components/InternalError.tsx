@@ -1,6 +1,6 @@
 import * as React from 'react';
 import type {SVGProps} from 'react';
-const ServerError = (props: SVGProps<SVGSVGElement>) => (
+const InternalError = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width={400}
         height={400}
@@ -132,4 +132,4 @@ const ServerError = (props: SVGProps<SVGSVGElement>) => (
         </g>
     </svg>
 );
-export default ServerError;
+export default InternalError;

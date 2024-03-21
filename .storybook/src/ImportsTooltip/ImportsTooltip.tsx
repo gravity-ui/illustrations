@@ -1,29 +1,26 @@
-import React from 'react';
-import {cn} from '../cn';
+import * as React from 'react';
+
 import {Button, Card, Label, Popover, PopoverInstanceProps, spacing} from '@gravity-ui/uikit';
 
-import './IconTooltip.scss';
+import {cn} from '../cn';
+import {IllustrationMeta} from '../types';
 
-export interface IconTooltipProps {
-    componentName: string;
-    importSvgLight: string;
-    importSvgDark: string;
-    importComponent: string;
+import './ImportsTooltip.scss';
+
+export interface ImportsTooltipProps {
+    meta: IllustrationMeta;
     children: React.ReactElement;
 }
 
-const b = cn('icon-tooltip');
+const b = cn('imports-tooltip');
 
-export function IconTooltip({
-    componentName,
-    importSvgLight,
-    importSvgDark,
-    importComponent,
-    children,
-}: IconTooltipProps) {
+export function ImportsTooltip({meta: {svgName, componentName}, children}: ImportsTooltipProps) {
     const popoverRef = React.useRef<PopoverInstanceProps>(null);
-    const content = React.useMemo(
-        () => (
+    const content = React.useMemo(() => {
+        const importSvgLight = buildIconSvgPath(svgName, componentName, 'light');
+        const importSvgDark = buildIconSvgPath(svgName, componentName, 'dark');
+        const importComponent = buildIconImportLine(componentName);
+        return (
             <div className={b('grid')}>
                 <div className={b('label')}>Name</div>
                 <div className={b('value')}>
@@ -50,9 +47,8 @@ export function IconTooltip({
                     </Label>
                 </div>
             </div>
-        ),
-        [],
-    );
+        );
+    }, []);
 
     return (
         <Card className={spacing({p: 2})}>
@@ -71,4 +67,11 @@ export function IconTooltip({
             {children}
         </Card>
     );
+}
+
+function buildIconSvgPath(svgName: string, componentName: string, theme: 'light' | 'dark') {
+    return `import ${componentName}Icon from '@gravity-ui/illustrations/svgs/${theme}/${svgName}.svg';`;
+}
+function buildIconImportLine(componentName: string) {
+    return `import {${componentName}} from '@gravity-ui/illustrations';`;
 }

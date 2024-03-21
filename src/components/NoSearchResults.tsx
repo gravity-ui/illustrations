@@ -1,6 +1,6 @@
 import * as React from 'react';
 import type {SVGProps} from 'react';
-const EmptySearch = (props: SVGProps<SVGSVGElement>) => (
+const NoSearchResults = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width={400}
         height={400}
@@ -80,4 +80,4 @@ const EmptySearch = (props: SVGProps<SVGSVGElement>) => (
         </g>
     </svg>
 );
-export default EmptySearch;
+export default NoSearchResults;

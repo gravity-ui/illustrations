@@ -1,6 +1,8 @@
 @import '../styles/theme.scss';
 
 .g-root {
+    @include g-illustrations-variables;
+
     &_theme_light {
         @include g-illustrations-colors-light;
     }

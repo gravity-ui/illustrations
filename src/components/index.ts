@@ -1,7 +1,7 @@
 export {default as VirtualMachine} from './VirtualMachine';
 export {default as Database} from './Database';
 export {default as NotFound} from './NotFound';
-export {default as ServerError} from './ServerError';
+export {default as InternalError} from './InternalError';
 export {default as Identity} from './Identity';
 export {default as Folder} from './Folder';
 export {default as AccessDenied} from './AccessDenied';
@@ -12,7 +12,7 @@ export {default as Template} from './Template';
 export {default as Network} from './Network';
 export {default as SuccessOperation} from './SuccessOperation';
 export {default as Disk} from './Disk';
-export {default as EmptySearch} from './EmptySearch';
+export {default as NoSearchResults} from './NoSearchResults';
 export {default as Detail} from './Detail';
 export {default as Queue} from './Queue';
 export {default as Feature} from './Feature';

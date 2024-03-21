@@ -1,213 +1,87 @@
 {
-  "icons": [
+  "illustrations": [
     {
-      "svgName": "virtual-machine-light",
-      "theme": "light",
+      "svgName": "virtual-machine",
       "componentName": "VirtualMachine"
     },
     {
-      "svgName": "virtual-machine-dark",
-      "theme": "dark",
-      "componentName": "VirtualMachine"
-    },
-    {
-      "svgName": "database-light",
-      "theme": "light",
+      "svgName": "database",
       "componentName": "Database"
     },
     {
-      "svgName": "database-dark",
-      "theme": "dark",
-      "componentName": "Database"
-    },
-    {
-      "svgName": "not-found-light",
-      "theme": "light",
+      "svgName": "not-found",
       "componentName": "NotFound"
     },
     {
-      "svgName": "not-found-dark",
-      "theme": "dark",
-      "componentName": "NotFound"
+      "svgName": "internal-error",
+      "componentName": "InternalError"
     },
     {
-      "svgName": "server-error-light",
-      "theme": "light",
-      "componentName": "ServerError"
-    },
-    {
-      "svgName": "server-error-dark",
-      "theme": "dark",
-      "componentName": "ServerError"
-    },
-    {
-      "svgName": "identity-light",
-      "theme": "light",
+      "svgName": "identity",
       "componentName": "Identity"
     },
     {
-      "svgName": "identity-dark",
-      "theme": "dark",
-      "componentName": "Identity"
-    },
-    {
-      "svgName": "folder-light",
-      "theme": "light",
+      "svgName": "folder",
       "componentName": "Folder"
     },
     {
-      "svgName": "folder-dark",
-      "theme": "dark",
-      "componentName": "Folder"
-    },
-    {
-      "svgName": "access-denied-light",
-      "theme": "light",
+      "svgName": "access-denied",
       "componentName": "AccessDenied"
     },
     {
-      "svgName": "access-denied-dark",
-      "theme": "dark",
-      "componentName": "AccessDenied"
-    },
-    {
-      "svgName": "history-light",
-      "theme": "light",
+      "svgName": "history",
       "componentName": "History"
     },
     {
-      "svgName": "history-dark",
-      "theme": "dark",
-      "componentName": "History"
-    },
-    {
-      "svgName": "project-light",
-      "theme": "light",
+      "svgName": "project",
       "componentName": "Project"
     },
     {
-      "svgName": "project-dark",
-      "theme": "dark",
-      "componentName": "Project"
-    },
-    {
-      "svgName": "bucket-light",
-      "theme": "light",
+      "svgName": "bucket",
       "componentName": "Bucket"
     },
     {
-      "svgName": "bucket-dark",
-      "theme": "dark",
-      "componentName": "Bucket"
-    },
-    {
-      "svgName": "template-light",
-      "theme": "light",
+      "svgName": "template",
       "componentName": "Template"
     },
     {
-      "svgName": "template-dark",
-      "theme": "dark",
-      "componentName": "Template"
-    },
-    {
-      "svgName": "network-light",
-      "theme": "light",
+      "svgName": "network",
       "componentName": "Network"
     },
     {
-      "svgName": "network-dark",
-      "theme": "dark",
-      "componentName": "Network"
-    },
-    {
-      "svgName": "success-operation-light",
-      "theme": "light",
+      "svgName": "success-operation",
       "componentName": "SuccessOperation"
     },
     {
-      "svgName": "success-operation-dark",
-      "theme": "dark",
-      "componentName": "SuccessOperation"
-    },
-    {
-      "svgName": "disk-light",
-      "theme": "light",
+      "svgName": "disk",
       "componentName": "Disk"
     },
     {
-      "svgName": "disk-dark",
-      "theme": "dark",
-      "componentName": "Disk"
+      "svgName": "no-search-results",
+      "componentName": "NoSearchResults"
     },
     {
-      "svgName": "empty-search-light",
-      "theme": "light",
-      "componentName": "EmptySearch"
-    },
-    {
-      "svgName": "empty-search-dark",
-      "theme": "dark",
-      "componentName": "EmptySearch"
-    },
-    {
-      "svgName": "detail-light",
-      "theme": "light",
+      "svgName": "detail",
       "componentName": "Detail"
     },
     {
-      "svgName": "detail-dark",
-      "theme": "dark",
-      "componentName": "Detail"
-    },
-    {
-      "svgName": "queue-light",
-      "theme": "light",
+      "svgName": "queue",
       "componentName": "Queue"
     },
     {
-      "svgName": "queue-dark",
-      "theme": "dark",
-      "componentName": "Queue"
-    },
-    {
-      "svgName": "feature-light",
-      "theme": "light",
+      "svgName": "feature",
       "componentName": "Feature"
     },
     {
-      "svgName": "feature-dark",
-      "theme": "dark",
-      "componentName": "Feature"
-    },
-    {
-      "svgName": "chart-light",
-      "theme": "light",
+      "svgName": "chart",
       "componentName": "Chart"
     },
     {
-      "svgName": "chart-dark",
-      "theme": "dark",
-      "componentName": "Chart"
-    },
-    {
-      "svgName": "snapshot-light",
-      "theme": "light",
+      "svgName": "snapshot",
       "componentName": "Snapshot"
     },
     {
-      "svgName": "snapshot-dark",
-      "theme": "dark",
-      "componentName": "Snapshot"
-    },
-    {
-      "svgName": "unable-to-display-light",
-      "theme": "light",
-      "componentName": "UnableToDisplay"
-    },
-    {
-      "svgName": "unable-to-display-dark",
-      "theme": "dark",
+      "svgName": "unable-to-display",
       "componentName": "UnableToDisplay"
     }
   ]
