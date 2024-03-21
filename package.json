@@ -26,7 +26,8 @@
     "test": "exit 0",
     "build": "tsc",
     "start": "TS_NODE_PROJECT=.storybook/tsconfig.json storybook dev",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "optimize": "npx svgo svgs/*"
   },
   "devDependencies": {
     "@bem-react/classname": "^1.6.0",
