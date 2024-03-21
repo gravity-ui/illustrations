@@ -3,9 +3,10 @@ import '@gravity-ui/uikit/styles/fonts.css';
 // eslint-disable-next-line import/order
 import '@gravity-ui/uikit/styles/styles.css';
 
-import React from 'react';
-import type {Decorator, Preview} from '@storybook/react';
+import * as React from 'react';
+
 import {Flex, ThemeProvider} from '@gravity-ui/uikit';
+import type {Decorator, Preview} from '@storybook/react';
 
 import './theme.scss';
 

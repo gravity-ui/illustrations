@@ -10,16 +10,16 @@ const config: StorybookConfig = {
 
     framework: {
         name: '@storybook/react-webpack5',
-        options: {}
+        options: {},
     },
 
     docs: {
-        autodocs: true
+        autodocs: true,
     },
     core: {
         disableTelemetry: true,
     },
-    
+
     webpackFinal: async (webpackConfig) => {
         webpackConfig.module?.rules?.forEach((rule) => {
             if (!rule || typeof rule !== 'object') {
