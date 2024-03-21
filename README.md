@@ -37,7 +37,7 @@ or use mixins in scss:
 #### Usage
 
 ```js
-import NotFound from '@gravity-ui/illustrations/dist/NotFound';
+import NotFound from '@gravity-ui/illustrations/NotFound';
 ```
 
 or
@@ -51,5 +51,5 @@ import {NotFound} from '@gravity-ui/illustrations';
 > You might need an appropriate loader for this
 
 ```js
-import cloudIcon from '@gravity-ui/icons/svgs/cloud.svg';
+import notFound from '@gravity-ui/illustrations/svgs/not-found-light.svg';
 ```
