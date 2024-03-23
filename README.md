@@ -12,10 +12,10 @@ npm install --save-dev @gravity-ui/illustrations
 
 #### Preparation
 
-Define `--gil-color-secondary-theme` css-token in your app:
+Define `--gil-color-underlay` css-token in your app:
 
 ```scss
---gil-color-secondary-theme: rgba(240, 243, 245, 1);
+--gil-color-underlay: rgba(240, 243, 245, 1);
 ```
 
 or use mixins in scss:

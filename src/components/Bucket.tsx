@@ -13,13 +13,13 @@ const Bucket = (props: SVGProps<SVGSVGElement>) => (
             <g>
                 <path
                     d="M54.7952 368H277.154C291.351 368 302.949 356.493 302.949 342.185V180.689C302.949 166.48 291.451 154.874 277.154 154.874H54.7952C40.5978 154.874 29 166.38 29 180.689V342.185C29.1 356.493 40.5978 368 54.7952 368Z"
-                    fill="var(--gil-color-secondary-theme)"
+                    fill="var(--gil-color-underlay)"
                 />
                 <path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M261.956 248.629H69.9923V121.254C69.9923 71.424 110.385 31 160.175 31H171.773C221.564 31 261.956 71.424 261.956 121.254V248.629Z"
-                    stroke="var(--gil-color-secondary-theme)"
+                    stroke="var(--gil-color-underlay)"
                     strokeWidth={34}
                 />
                 <path

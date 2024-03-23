@@ -13,7 +13,7 @@ const Detail = (props: SVGProps<SVGSVGElement>) => (
             <g>
                 <path
                     d="M194.9 47.4081C194.9 40.0036 188.9 34 181.5 34H39.4C32 34 26 40.0036 26 47.3081V262.639C26 270.043 32 276.047 39.4 276.047H314.3C321.7 276.047 327.7 270.043 327.7 262.639V74.1244C327.7 66.7199 321.7 60.7162 314.3 60.7162H208.3C200.9 60.7162 194.9 54.8126 194.9 47.4081Z"
-                    fill="var(--gil-color-secondary-theme)"
+                    fill="var(--gil-color-underlay)"
                 />
                 <path
                     fillRule="evenodd"
@@ -83,7 +83,7 @@ const Detail = (props: SVGProps<SVGSVGElement>) => (
                 <g>
                     <path
                         d="M336.5 99.338C325 96.4362 313.3 103.34 310.4 114.847C307.5 126.354 314.4 138.061 325.9 140.963C329.5 141.864 333.2 141.864 336.5 140.963V99.338Z"
-                        fill="var(--gil-color-secondary-theme)"
+                        fill="var(--gil-color-underlay)"
                     />
                     <path
                         fillRule="evenodd"
