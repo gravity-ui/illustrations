@@ -1,0 +1,11 @@
+@import '../styles/theme.scss';
+
+.g-root {
+    &_theme_light {
+        @include g-illustrations-colors-light;
+    }
+
+    &_theme_dark {
+        @include g-illustrations-colors-dark;
+    }
+}

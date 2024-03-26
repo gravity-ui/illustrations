@@ -1,0 +1,7 @@
+@mixin g-illustrations-colors-light {
+    --gil-color-underlay: rgba(240, 243, 245, 1);
+}
+
+@mixin g-illustrations-colors-dark {
+    --gil-color-underlay: rgba(67, 63, 67, 1);
+}

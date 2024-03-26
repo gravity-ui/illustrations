@@ -1,0 +1,88 @@
+{
+  "illustrations": [
+    {
+      "svgName": "virtual-machine",
+      "componentName": "VirtualMachine"
+    },
+    {
+      "svgName": "database",
+      "componentName": "Database"
+    },
+    {
+      "svgName": "not-found",
+      "componentName": "NotFound"
+    },
+    {
+      "svgName": "internal-error",
+      "componentName": "InternalError"
+    },
+    {
+      "svgName": "identity",
+      "componentName": "Identity"
+    },
+    {
+      "svgName": "folder",
+      "componentName": "Folder"
+    },
+    {
+      "svgName": "access-denied",
+      "componentName": "AccessDenied"
+    },
+    {
+      "svgName": "history",
+      "componentName": "History"
+    },
+    {
+      "svgName": "project",
+      "componentName": "Project"
+    },
+    {
+      "svgName": "bucket",
+      "componentName": "Bucket"
+    },
+    {
+      "svgName": "template",
+      "componentName": "Template"
+    },
+    {
+      "svgName": "network",
+      "componentName": "Network"
+    },
+    {
+      "svgName": "success-operation",
+      "componentName": "SuccessOperation"
+    },
+    {
+      "svgName": "disk",
+      "componentName": "Disk"
+    },
+    {
+      "svgName": "no-search-results",
+      "componentName": "NoSearchResults"
+    },
+    {
+      "svgName": "detail",
+      "componentName": "Detail"
+    },
+    {
+      "svgName": "queue",
+      "componentName": "Queue"
+    },
+    {
+      "svgName": "feature",
+      "componentName": "Feature"
+    },
+    {
+      "svgName": "chart",
+      "componentName": "Chart"
+    },
+    {
+      "svgName": "snapshot",
+      "componentName": "Snapshot"
+    },
+    {
+      "svgName": "unable-to-display",
+      "componentName": "UnableToDisplay"
+    }
+  ]
+}

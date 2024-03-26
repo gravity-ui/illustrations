@@ -7,3 +7,49 @@ npm install --save-dev @gravity-ui/illustrations
 ```
 
 ## Usage
+
+### React
+
+#### Preparation
+
+Define `--gil-color-underlay` css-token in your app:
+
+```scss
+--gil-color-underlay: rgba(240, 243, 245, 1);
+```
+
+or use mixins in scss:
+
+```scss
+@import '@gravity-ui/illustrations/styles/theme.scss';
+
+.g-root {
+  &_theme_light {
+    @include g-illustrations-colors-light;
+  }
+
+  &_theme_dark {
+    @include g-illustrations-colors-dark;
+  }
+}
+```
+
+#### Usage
+
+```js
+import NotFound from '@gravity-ui/illustrations/NotFound';
+```
+
+or
+
+```js
+import {NotFound} from '@gravity-ui/illustrations';
+```
+
+### SVG
+
+> You might need an appropriate loader for this
+
+```js
+import notFound from '@gravity-ui/illustrations/svgs/not-found-light.svg';
+```

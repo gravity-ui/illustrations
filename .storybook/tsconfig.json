@@ -3,5 +3,11 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "ES2017"
-    }
+    },
+    "include": [
+        "src",
+        "../node_modules/webpack/module.d.ts",
+        "../lib",
+        "./assets.d.ts"
+    ]
 }

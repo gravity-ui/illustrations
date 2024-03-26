@@ -6,4 +6,7 @@
 node_modules
 
 # Artifacts
-dist
+/*.d.ts
+/*.js
+!/.*.js
+storybook-static
