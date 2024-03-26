@@ -5,4 +5,4 @@
 
 ### Features
 
-* release ([ba4524b](https://github.com/gravity-ui/illustrations/commit/ba4524b8a3f849614d4553aab57776ec05708d8c))
+* Initial implementation ([8f4e491](https://github.com/gravity-ui/illustrations/commit/8f4e491b2405aedb6f1771bcdc8dee9909b5303c))
