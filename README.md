@@ -12,10 +12,17 @@ npm install --save-dev @gravity-ui/illustrations
 
 #### Preparation
 
-Define `--gil-color-underlay` css-token in your app:
+Define following css-tokens in your app:
 
 ```scss
---gil-color-underlay: rgba(240, 243, 245, 1);
+--gil-color-object-base: rgb(255, 190, 92);
+--gil-color-object-accent-heavy: rgb(211, 101, 7);
+--gil-color-object-hightlight: rgb(255, 216, 157);
+--gil-color-shadow-over-object: rgb(211, 158, 80);
+--gil-color-background-lines: rgb(140, 140, 140);
+--gil-color-background-shapes: rgb(242, 242, 242);
+--gil-color-object-accent-light: rgb(255, 255, 255);
+--gil-color-object-danger: rgb(255, 0, 61);
 ```
 
 or use mixins in scss:
@@ -32,6 +39,15 @@ or use mixins in scss:
     @include g-illustrations-colors-dark;
   }
 }
+```
+
+Alternatively, if you are already have `@gravity-ui/uikit` package installed in your project, you can just import `gravityTheme.scss` to the root file with styles imports in your project:
+
+```scss
+// existing gravity styles definition
+import '@gravity-ui/uikit/styles/styles.css';
+// just add one more import below
+import '@gravity-ui/illustrations/styles/gravityTheme.scss';
 ```
 
 #### Usage
