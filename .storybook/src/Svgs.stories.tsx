@@ -8,7 +8,7 @@ import {IllustrationMeta} from './types';
 
 import metadata from '../../metadata.json';
 
-const meta = {
+const storyMeta = {
     title: 'Svgs',
     id: 'svgs',
     args: {
@@ -16,7 +16,7 @@ const meta = {
     },
 } as Meta;
 
-export default meta;
+export default storyMeta;
 
 interface Item {
     meta: IllustrationMeta;
@@ -26,11 +26,15 @@ interface Item {
 const items = (metadata.illustrations as IllustrationMeta[]).map((meta) => {
     const ComponentLight = require(`../../svgs/${meta.svgName}-light.svg`).default;
     const ComponentDark = require(`../../svgs/${meta.svgName}-dark.svg`).default;
+    const ComponentLightHC = require(`../../svgs/${meta.svgName}-light-hc.svg`).default;
+    const ComponentDarkHC = require(`../../svgs/${meta.svgName}-dark-hc.svg`).default;
 
     return {
         meta,
         ComponentLight,
         ComponentDark,
+        ComponentLightHC,
+        ComponentDarkHC,
     };
 });
 
@@ -57,4 +61,11 @@ export const Light = svgsRenderer(
 );
 export const Dark = svgsRenderer(
     items.map(({meta, ComponentDark}) => ({meta, Component: ComponentDark})),
+);
+
+export const LightHC = svgsRenderer(
+    items.map(({meta, ComponentLightHC}) => ({meta, Component: ComponentLightHC})),
+);
+export const DarkHC = svgsRenderer(
+    items.map(({meta, ComponentDarkHC}) => ({meta, Component: ComponentDarkHC})),
 );
