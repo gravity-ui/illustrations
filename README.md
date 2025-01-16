@@ -85,3 +85,11 @@ import {NotFound} from '@gravity-ui/illustrations';
 ```js
 import notFound from '@gravity-ui/illustrations/svgs/not-found-light.svg';
 ```
+
+### Development
+
+For updating illustrations according to new design, change the content of svg-s in light theme (`<this-repository-root>/svgs/<illustration-name>-light.svg` files) and then run command:
+
+```shell
+npm run generate
+```

@@ -85,3 +85,11 @@ import {NotFound} from '@gravity-ui/illustrations';
 ```js
 import notFound from '@gravity-ui/illustrations/svgs/not-found-light.svg';
 ```
+
+### Разработка
+
+Для обновления иллюстраций в соответствии с новым дизайном, измените контент svg-файлов в светлой теме (`<this-repository-root>/svgs/<illustration-name>-light.svg` файлы) и затем запустите команду:
+
+```shell
+npm run generate
+```
