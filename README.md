@@ -1,6 +1,6 @@
 # @gravity-ui/illustrations &middot; [![npm package](https://img.shields.io/npm/v/@gravity-ui/illustrations)](https://www.npmjs.com/package/@gravity-ui/illustrations) [![CI](https://img.shields.io/github/actions/workflow/status/gravity-ui/illustrations/.github/workflows/ci.yml?label=CI&logo=github)](https://github.com/gravity-ui/illustrations/actions/workflows/ci.yml?query=branch:main) [![storybook](https://img.shields.io/badge/Storybook-deployed-ff4685)](https://preview.gravity-ui.com/illustrations/)
 
-## Install
+## Installation
 
 ```shell
 npm install --save-dev @gravity-ui/illustrations
@@ -12,7 +12,11 @@ npm install --save-dev @gravity-ui/illustrations
 
 #### Preparation
 
-Define following css-tokens in your app:
+Setup illustrations theme. Execute any of the following steps:
+
+##### Defining css-tokens with own colors pallete
+
+Define following css-tokens in app:
 
 ```scss
 --gil-color-object-base: rgb(255, 190, 92);
@@ -25,7 +29,9 @@ Define following css-tokens in your app:
 --gil-color-object-danger: rgb(255, 0, 61);
 ```
 
-or use mixins in scss:
+##### Using mixins with default gravity-theme in scss
+
+Use the following mixins for styling illustrations in different themes
 
 ```scss
 @import '@gravity-ui/illustrations/styles/theme.scss';
@@ -35,13 +41,23 @@ or use mixins in scss:
     @include g-illustrations-colors-light;
   }
 
+  &_theme_light-hc {
+    @include g-illustrations-colors-light-hc;
+  }
+
   &_theme_dark {
     @include g-illustrations-colors-dark;
+  }
+
+  &_theme_dark-hc {
+    @include g-illustrations-colors-dark-hc;
   }
 }
 ```
 
-Alternatively, if you are already have `@gravity-ui/uikit` package installed in your project, you can just import `gravityTheme.scss` to the root file with styles imports in your project:
+##### Alternative for projects with pre-installed gravity theme
+
+Alternatively, if `@gravity-ui/uikit` is already installed in the project and default theme is used, you can just import `gravityTheme.scss` to the root file with styles in your project:
 
 ```scss
 // existing gravity styles definition
@@ -50,7 +66,7 @@ import '@gravity-ui/uikit/styles/styles.css';
 import '@gravity-ui/illustrations/styles/gravityTheme.scss';
 ```
 
-#### Usage
+#### Components usage
 
 ```js
 import NotFound from '@gravity-ui/illustrations/NotFound';
