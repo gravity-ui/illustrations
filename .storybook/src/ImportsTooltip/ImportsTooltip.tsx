@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {Button, Card, Label, Popover, PopoverInstanceProps, spacing} from '@gravity-ui/uikit';
+import {Button, Card, Label, Popover, spacing} from '@gravity-ui/uikit';
 
 import {cn} from '../cn';
 import {IllustrationMeta} from '../types';
@@ -15,7 +15,6 @@ export interface ImportsTooltipProps {
 const b = cn('imports-tooltip');
 
 export function ImportsTooltip({meta: {svgName, componentName}, children}: ImportsTooltipProps) {
-    const popoverRef = React.useRef<PopoverInstanceProps>(null);
     const content = React.useMemo(() => {
         const importSvgLight = buildIconSvgPath(svgName, componentName, 'light');
         const importSvgDark = buildIconSvgPath(svgName, componentName, 'dark');
@@ -54,12 +53,11 @@ export function ImportsTooltip({meta: {svgName, componentName}, children}: Impor
         <Card className={spacing({p: 2})}>
             <div>
                 <Popover
-                    ref={popoverRef}
                     content={content}
                     placement={['bottom', 'top']}
-                    tooltipClassName={b()}
-                    openOnHover={false}
-                    disablePortal
+                    trigger="click"
+                    hasArrow
+                    className={b()}
                 >
                     <Button view="flat-info">{componentName}</Button>
                 </Popover>

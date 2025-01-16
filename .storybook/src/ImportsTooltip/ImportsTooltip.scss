@@ -1,12 +1,14 @@
 @use '~@gravity-ui/uikit/styles/mixins';
 
 .imports-tooltip {
-    --g-popover-max-width: 1000px;
+    max-width: 1000px;
+
+    padding: var(--g-spacing-4);
 
     &__grid {
         display: grid;
         grid-template-columns: max-content minmax(max-content, 1fr);
-        gap: 12px;
+        gap: var(--g-spacing-3);
     }
 
     &__label {
