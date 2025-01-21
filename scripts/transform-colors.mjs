@@ -1,7 +1,7 @@
 import {optimize} from 'svgo';
 import {colorsProps} from 'svgo/plugins/_collections.js';
 
-function getColorsTransformatorPlagin(transforms) {
+function getColorsTransformatorPlugin(transforms) {
     return {
         name: 'change-colors-to-css-vars',
         fn: () => {
@@ -48,7 +48,7 @@ export function svgoTransformer(svgString, transforms) {
         multipass: true,
         plugins: [
             {name: 'removeAttrs', params: {attrs: ['id']}},
-            transforms ? getColorsTransformatorPlagin(transforms) : undefined,
+            transforms ? getColorsTransformatorPlugin(transforms) : undefined,
             {
                 name: 'preset-default',
                 params: {
