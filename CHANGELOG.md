@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.0.0](https://github.com/gravity-ui/illustrations/compare/v1.0.0...v2.0.0) (2025-02-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* support illustrations theming ([#6](https://github.com/gravity-ui/illustrations/issues/6))
+* update `@gravity-ui/uikit`
+
+### Features
+
+* support illustrations theming ([#6](https://github.com/gravity-ui/illustrations/issues/6)) ([a7f8376](https://github.com/gravity-ui/illustrations/commit/a7f83765c1fd0b7c85e6dfa6d70e5fcb212971c7))
+
 ## 1.0.0 (2024-03-26)
 
 
