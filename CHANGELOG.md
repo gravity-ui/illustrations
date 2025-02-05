@@ -6,6 +6,7 @@
 ### ⚠ BREAKING CHANGES
 
 * support illustrations theming ([#6](https://github.com/gravity-ui/illustrations/issues/6))
+* update `@gravity-ui/uikit`
 
 ### Features
 
