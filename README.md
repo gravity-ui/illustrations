@@ -57,13 +57,13 @@ Use the following mixins for styling illustrations in different themes
 
 ##### Alternative for projects with pre-installed gravity theme
 
-Alternatively, if `@gravity-ui/uikit` is already installed in the project and default theme is used, you can just import `gravityTheme.scss` to the root file with styles in your project:
+Alternatively, if `@gravity-ui/uikit` is already installed in the project and default theme is used, you can just import `styles.scss` to the root file with styles in your project:
 
 ```scss
 // existing gravity styles definition
 import '@gravity-ui/uikit/styles/styles.css';
 // just add one more import below
-import '@gravity-ui/illustrations/styles/gravityTheme.scss';
+import '@gravity-ui/illustrations/styles/styles.scss';
 ```
 
 #### Components usage

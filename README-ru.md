@@ -57,13 +57,13 @@ npm install --save-dev @gravity-ui/illustrations
 
 ##### Альтернатива для проектов с предустановленной gravity-темой
 
-В качестве альтернативы, если `@gravity-ui/uikit` уже установлен в проекте и использована дефолтная тема, можно просто добавить импорт `gravityTheme.scss` в файл с глобальными стилями проекта:
+В качестве альтернативы, если `@gravity-ui/uikit` уже установлен в проекте и использована дефолтная тема, можно просто добавить импорт `styles.scss` в файл с глобальными стилями проекта:
 
 ```scss
 // существующий импорт определений gravity-стилей
 import '@gravity-ui/uikit/styles/styles.css';
 // нужно добавить еще один импорт ниже
-import '@gravity-ui/illustrations/styles/gravityTheme.scss';
+import '@gravity-ui/illustrations/styles/styles.scss';
 ```
 
 #### Использование компонентов
