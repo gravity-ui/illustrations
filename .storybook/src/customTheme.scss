@@ -1,0 +1,25 @@
+.custom {
+    .g-root_theme_light &,
+    .g-root_theme_light-hc & {
+        --gil-color-object-base: rgb(103, 205, 92);
+        --gil-color-object-accent-heavy: rgb(89, 170, 80);
+        --gil-color-object-hightlight: rgb(164, 225, 157);
+        --gil-color-shadow-over-object: rgb(89, 170, 80);
+        --gil-color-background-lines: rgb(140, 140, 140);
+        --gil-color-background-shapes: rgb(242, 242, 242);
+        --gil-color-object-accent-light: rgb(255, 255, 255);
+        --gil-color-object-danger: rgb(255, 4, 1);
+    }
+
+    .g-root_theme_dark &,
+    .g-root_theme_dark-hc & {
+        --gil-color-object-base: rgb(103, 205, 92);
+        --gil-color-object-accent-heavy: rgb(89, 170, 80);
+        --gil-color-object-hightlight: rgb(82, 152, 75);
+        --gil-color-shadow-over-object: rgb(118, 210, 108);
+        --gil-color-background-lines: rgb(156, 153, 156);
+        --gil-color-background-shapes: rgb(78, 74, 78);
+        --gil-color-object-accent-light: rgb(255, 255, 255);
+        --gil-color-object-danger: rgb(255, 4, 1);
+    }
+}

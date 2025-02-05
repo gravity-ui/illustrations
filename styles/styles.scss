@@ -1,0 +1,23 @@
+.g-root_theme_light,
+.g-root_theme_light-hc {
+    --gil-color-object-base: var(--g-color-private-yellow-550-solid);
+    --gil-color-object-accent-heavy: var(--g-color-private-orange-650-solid);
+    --gil-color-object-hightlight: var(--g-color-private-yellow-350-solid);
+    --gil-color-shadow-over-object: var(--g-color-private-yellow-650-solid);
+    --gil-color-background-lines: var(--g-color-private-black-450-solid);
+    --gil-color-background-shapes: var(--g-color-private-black-50-solid);
+    --gil-color-object-accent-light: var(--g-color-private-white-1000-solid);
+    --gil-color-object-danger: var(--g-color-private-red-550-solid);
+}
+
+.g-root_theme_dark,
+.g-root_theme_dark-hc {
+    --gil-color-object-base: var(--g-color-private-yellow-550-solid);
+    --gil-color-object-accent-heavy: var(--g-color-private-orange-650-solid);
+    --gil-color-object-hightlight: var(--g-color-private-yellow-700-solid);
+    --gil-color-shadow-over-object: var(--g-color-private-yellow-500-solid);
+    --gil-color-background-lines: var(--g-color-private-white-550-solid);
+    --gil-color-background-shapes: var(--g-color-private-white-200-solid);
+    --gil-color-object-accent-light: var(--g-color-private-white-1000-solid);
+    --gil-color-object-danger: var(--g-color-private-red-550-solid);
+}

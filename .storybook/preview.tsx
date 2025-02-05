@@ -41,6 +41,8 @@ const preview: Preview = {
                 items: [
                     {value: 'light', right: '☼', title: 'Light'},
                     {value: 'dark', right: '☾', title: 'Dark'},
+                    {value: 'light-hc', right: '☼', title: 'Light HC'},
+                    {value: 'dark-hc', right: '☾', title: 'Dark HC'},
                 ],
             },
         },

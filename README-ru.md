@@ -12,13 +12,26 @@ npm install --save-dev @gravity-ui/illustrations
 
 #### Подготовка
 
-Укажите значение для CSS-токена `--gil-color-underlay` в приложении:
+Установите тему иллюстраций. Выполните любой из последующих шагов:
+
+##### Указание значений css-токенов с собственной цветовой палитрой
+
+Задайте значения для CSS-токенов из списка ниже в приложении:
 
 ```scss
---gil-color-underlay: rgba(240, 243, 245, 1);
+--gil-color-object-base: rgb(255, 190, 92);
+--gil-color-object-accent-heavy: rgb(211, 101, 7);
+--gil-color-object-hightlight: rgb(255, 216, 157);
+--gil-color-shadow-over-object: rgb(211, 158, 80);
+--gil-color-background-lines: rgb(140, 140, 140);
+--gil-color-background-shapes: rgb(242, 242, 242);
+--gil-color-object-accent-light: rgb(255, 255, 255);
+--gil-color-object-danger: rgb(255, 0, 61);
 ```
 
-В качестве альтернативы можно использовать SCSS-миксины:
+##### Использование SCSS-миксинов с дефолтной gravity-темой
+
+Используйте следующие миксины для стилизации иллюстраций в разных темах:
 
 ```scss
 @import '@gravity-ui/illustrations/styles/theme.scss';
@@ -28,13 +41,32 @@ npm install --save-dev @gravity-ui/illustrations
     @include g-illustrations-colors-light;
   }
 
+  &_theme_light-hc {
+    @include g-illustrations-colors-light-hc;
+  }
+
   &_theme_dark {
     @include g-illustrations-colors-dark;
+  }
+
+  &_theme_dark-hc {
+    @include g-illustrations-colors-dark-hc;
   }
 }
 ```
 
-#### Использование
+##### Альтернатива для проектов с предустановленной gravity-темой
+
+В качестве альтернативы, если `@gravity-ui/uikit` уже установлен в проекте и использована дефолтная тема, можно просто добавить импорт `styles.scss` в файл с глобальными стилями проекта:
+
+```scss
+// существующий импорт определений gravity-стилей
+import '@gravity-ui/uikit/styles/styles.css';
+// нужно добавить еще один импорт ниже
+import '@gravity-ui/illustrations/styles/styles.scss';
+```
+
+#### Использование компонентов
 
 ```js
 import NotFound from '@gravity-ui/illustrations/NotFound';
@@ -52,4 +84,12 @@ import {NotFound} from '@gravity-ui/illustrations';
 
 ```js
 import notFound from '@gravity-ui/illustrations/svgs/not-found-light.svg';
+```
+
+### Разработка
+
+Для обновления иллюстраций в соответствии с новым дизайном, измените контент svg-файлов в светлой теме (`<this-repository-root>/svgs/<illustration-name>-light.svg` файлы) и затем запустите команду:
+
+```shell
+npm run generate
 ```
