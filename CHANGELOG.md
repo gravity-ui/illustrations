@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/gravity-ui/illustrations/compare/v2.0.0...v2.1.0) (2025-02-28)
+
+
+### Features
+
+* **deps:** widen peer deps ([#10](https://github.com/gravity-ui/illustrations/issues/10)) ([d643da0](https://github.com/gravity-ui/illustrations/commit/d643da0b50d229afc3a109880815b6b2db22193b))
+
 ## [2.0.0](https://github.com/gravity-ui/illustrations/compare/v1.0.0...v2.0.0) (2025-02-05)
 
 
