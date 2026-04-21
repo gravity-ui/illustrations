@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/gravity-ui/illustrations/compare/v2.1.0...v2.1.1) (2026-04-21)
+
+
+### Bug Fixes
+
+* use actual danger color ([#12](https://github.com/gravity-ui/illustrations/issues/12)) ([5fca6fa](https://github.com/gravity-ui/illustrations/commit/5fca6fa07ea07d34f01fbae1980cc66007b4f8e8))
+
 ## [2.1.0](https://github.com/gravity-ui/illustrations/compare/v2.0.0...v2.1.0) (2025-02-28)
 
 
