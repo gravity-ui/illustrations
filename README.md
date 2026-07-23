@@ -118,3 +118,7 @@ A themed set of flat SVG illustrations (empty states, errors, not-found, etc.) f
 - **Rendering without a theme import** — illustrations appear uncolored unless you import `@gravity-ui/illustrations/styles/styles.scss` (or define the `--gil-color-*` CSS tokens).
 - **Hallucinated default export names** — illustration components are PascalCase named exports (e.g. `NotFound`), imported from the package root or per-file (`@gravity-ui/illustrations/NotFound`).
 - **Importing `.svg` directly in a non-configured bundler** — raw SVG imports need an appropriate loader; prefer the React component export to avoid bundler setup.
+
+## Documentation for AI agents
+
+Agent-readable documentation for the installed version is located in `node_modules/@gravity-ui/illustrations/docs/INDEX.md`.
