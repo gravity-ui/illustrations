@@ -8,7 +8,8 @@
     "*.js",
     "!.*.js",
     "svgs",
-    "styles"
+    "styles",
+    "docs"
   ],
   "repository": {
     "type": "git",
@@ -25,7 +26,8 @@
     "lint": "run-p lint:*",
     "typecheck": "tsc --noEmit",
     "test": "exit 0",
-    "build": "tsc",
+    "build:docs": "node scripts/build-docs.mjs",
+    "build": "tsc && npm run build:docs",
     "start": "TS_NODE_PROJECT=.storybook/tsconfig.json storybook dev",
     "prepublishOnly": "npm run build",
     "optimize": "npx svgo -f svgs --multipass",
@@ -37,6 +39,7 @@
     "@commitlint/config-conventional": "^19.0.3",
     "@gravity-ui/eslint-config": "^3.1.1",
     "@gravity-ui/prettier-config": "^1.1.0",
+    "@gravity-ui/readme-validator": "^1.3.0",
     "@gravity-ui/stylelint-config": "^4.0.1",
     "@gravity-ui/tsconfig": "^1.0.0",
     "@gravity-ui/uikit": "^7.0.0",
