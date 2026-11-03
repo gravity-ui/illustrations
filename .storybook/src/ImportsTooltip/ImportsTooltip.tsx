@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {Button, Card, Label, Popover, spacing} from '@gravity-ui/uikit';
+import {Button, Card, Label, Popover} from '@gravity-ui/uikit';
 
 import {cn} from '../cn';
 import {IllustrationMeta} from '../types';
@@ -50,7 +50,7 @@ export function ImportsTooltip({meta: {svgName, componentName}, children}: Impor
     }, []);
 
     return (
-        <Card className={spacing({p: 2})}>
+        <Card padding="spacing-2">
             <div>
                 <Popover
                     content={content}
