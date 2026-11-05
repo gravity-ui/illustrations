@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {Flex, Icon, spacing} from '@gravity-ui/uikit';
+import {Box, Flex, Icon} from '@gravity-ui/uikit';
 import {Meta, StoryFn} from '@storybook/react';
 
 import {ImportsTooltip} from './ImportsTooltip/ImportsTooltip';
@@ -42,8 +42,8 @@ const svgsRenderer =
     (renderItems: Item[]): StoryFn =>
     ({size}) => {
         return (
-            <div className={spacing({p: 4})}>
-                <Flex gap={8} wrap>
+            <Box padding="spacing-4">
+                <Flex gap="spacing-8" wrap>
                     {renderItems.map(({meta: itemMeta, Component}) => {
                         return (
                             <ImportsTooltip key={itemMeta.svgName} meta={itemMeta}>
@@ -52,7 +52,7 @@ const svgsRenderer =
                         );
                     })}
                 </Flex>
-            </div>
+            </Box>
         );
     };
 

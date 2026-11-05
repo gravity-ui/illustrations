@@ -5,7 +5,7 @@ import '@gravity-ui/uikit/styles/styles.css';
 
 import * as React from 'react';
 
-import {Flex, ThemeProvider} from '@gravity-ui/uikit';
+import {Flex, Provider} from '@gravity-ui/uikit';
 import type {Decorator, Preview} from '@storybook/react';
 
 import './theme.scss';
@@ -16,9 +16,9 @@ const withThemeProvider: Decorator = (Story, context) => {
 
     return (
         <Flex>
-            <ThemeProvider theme={theme} scoped>
+            <Provider theme={theme} scoped>
                 <Story {...context} theme={theme} />
-            </ThemeProvider>
+            </Provider>
         </Flex>
     );
 };
