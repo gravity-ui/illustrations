@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/gravity-ui/illustrations/compare/v2.1.1...v3.0.0) (2026-11-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to uikit 8 ([#15](https://github.com/gravity-ui/illustrations/issues/15))
+
+### Features
+
+* migrate to uikit 8 ([#15](https://github.com/gravity-ui/illustrations/issues/15)) ([8ead727](https://github.com/gravity-ui/illustrations/commit/8ead727633f1f5bbe914a80de87a8f5687b21918))
+
 ## [2.1.1](https://github.com/gravity-ui/illustrations/compare/v2.1.0...v2.1.1) (2026-04-21)
 
 
